@@ -1,0 +1,26 @@
+# =================================================================
+# Diese Datei definiert die exakte Laufzeitumgebung für das Projekt.
+# Version-Pinning (==) wird verwendet, um die Reproduzierbarkeit 
+# der statistischen Ergebnisse auf den Rechnern der Prüfer zu garantieren.
+# =================================================================
+
+# --- CORE DATA SCIENCE & ETL ---
+# Verantwortlich für Datenstrukturen und numerische Operationen
+pandas>=2.2.0      # Essentiell für DataFrame-Manipulationen (ETL-Pipeline)
+numpy>=1.26.0      # Grundlegende Matrix- und Vektor-Operationen
+
+# --- VISUALISIERUNG & FRONTEND ---
+# Komponenten für die grafische Aufbereitung im Dashboard
+streamlit>=1.31.0  # Web-Framework für das interaktive Dashboard (UI)
+plotly>=5.19.0     # Engine für interaktive Graphen (Bubble Charts, Time Series)
+matplotlib>=3.8.0  # Backend-Support für statische Plots
+seaborn>=0.13.0    # Erweiterte statistische Visualisierungen
+
+# --- MATHEMATIK & STATISTIK ---
+# Implementierung der Regressionsmodelle und Hypothesentests
+statsmodels>=0.14.1 # Inferenzstatistik (OLS Regression, p-Werte, F-Test)
+scikit-learn>=1.4.0 # Machine Learning Utilities und Preprocessing-Tools
+
+# --- DATEN-INGESTION & API ---
+# Schnittstellen zu externen Datenquellen
+kagglehub>=0.2.0   # API-Wrapper für den automatisierten Dataset-Download
